@@ -3984,6 +3984,13 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
+"@types/lodash-es@^4.17.3":
+  version "4.17.3"
+  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.3.tgz#87eb0b3673b076b8ee655f1890260a136af09a2d"
+  integrity sha512-iHI0i7ZAL1qepz1Y7f3EKg/zUMDwDfTzitx+AlHhJJvXwenP682ZyGbgPSc5Ej3eEAKVbNWKFuwOadCj5vBbYQ==
+  dependencies:
+    "@types/lodash" "*"
+
 "@types/lodash@*", "@types/lodash@4.14.149", "@types/lodash@^4.14.146", "@types/lodash@^4.14.148":
   version "4.14.149"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.149.tgz#1342d63d948c6062838fbf961012f74d4e638440"
@@ -8443,6 +8450,25 @@ encodable@^0.2.0:
     vega "^5.8.1"
     vega-lite "^4.0.0-beta.12"
 
+encodable@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/encodable/-/encodable-0.2.3.tgz#c6f969df1bbc0466862369d063307d06bf2a7133"
+  integrity sha512-6H4l6V3gEmwujiKWIzpT0TBz/yvURYeVobtA0ydUstOEm6OY2GAefupn6ySmb4f5ZNzA43AcZynSYxtvt8Y73A==
+  dependencies:
+    "@types/d3-array" "^2.0.0"
+    "@types/d3-interpolate" "^1.3.1"
+    "@types/d3-scale" "^2.1.1"
+    "@types/d3-time" "^1.0.10"
+    "@types/lodash-es" "^4.17.3"
+    d3-array "^2.3.1"
+    d3-interpolate "^1.3.2"
+    d3-scale "^3.0.1"
+    d3-time "^1.0.11"
+    lodash-es "^4.17.15"
+    reselect "^4.0.0"
+    vega "^5.9.1"
+    vega-lite "~4.1.0"
+
 encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
@@ -12260,6 +12286,11 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+lodash-es@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -17818,7 +17849,7 @@ vega-lite@^4.0.0-beta.12:
     vega-util "~1.12.1"
     yargs "~15.0.2"
 
-vega-lite@~4.1.1:
+vega-lite@~4.1.0, vega-lite@~4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/vega-lite/-/vega-lite-4.1.1.tgz#f6e6cae4e0518c66afd0298fb544b6a35290437b"
   integrity sha512-D2seO6ZbY8aZQ8+ZQfU+5NYwot3ryIDyvdQdcVoupMSgJ/oGv4QqEwL3rmu8abdSG6NhFiac0trsI+wBb0F6vQ==
@@ -17997,7 +18028,7 @@ vega-wordcloud@4.0.4:
     vega-statistics "^1.7.1"
     vega-util "^1.12.1"
 
-vega@^5.8.1:
+vega@^5.8.1, vega@^5.9.1:
   version "5.9.1"
   resolved "https://registry.yarnpkg.com/vega/-/vega-5.9.1.tgz#8c4cd23630ba6b4422342a4825234a7d1e0a9957"
   integrity sha512-Wd5WAfaXPGuHk5cSFqiFNkkw5DXRSZcl+q4x351VUbmV5/IRipyGZx05EbBP5D9B40Xb/Tt2I+JQBBdxuYYIxQ==
