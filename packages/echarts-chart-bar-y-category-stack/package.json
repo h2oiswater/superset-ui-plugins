@@ -1,0 +1,23 @@
+{
+  "name": "echarts-chart-bar-y-category-stack",
+  "version": "1.0.0",
+  "description": "echarts bar-y-category-stack for superset",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "superset"
+  ],
+  "author": "Nova",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "echarts": "^4.6.0"
+  },
+  "peerDependencies": {
+    "@superset-ui/chart": "^0.12.0",
+    "@superset-ui/translation": "^0.12.0",
+    "react": "^15 || ^16"
+  }
+}
