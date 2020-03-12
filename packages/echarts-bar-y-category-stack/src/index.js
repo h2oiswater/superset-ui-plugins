@@ -16,38 +16,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-/* eslint-disable react/jsx-sort-default-props, react/sort-prop-types */
-/* eslint-disable react/forbid-prop-types, react/require-default-props */
-import React from "react";
-import PropTypes from "prop-types";
+import { t } from '@superset-ui/translation';
+import { ChartMetadata, ChartPlugin } from '@superset-ui/chart';
+import thumbnail from './images/thumbnail.png';
 
-import "./EchartsBarYCategoryStack.css";
+const metadata = new ChartMetadata({
+  description: '',
+  name: t('ECharts堆叠条形图'),
+  thumbnail,
+  useLegacyApi: true,
+});
 
-const propTypes = {
-  width: PropTypes.number,
-  height: PropTypes.number
-};
-
-const defaultProps = {
-  width: 400,
-  height: 400
-};
-
-class EchartsBarYCategoryStack extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { width, height } = this.props;
-
-    return (
-     <div width={width} height={height}>你当我是ECharts吧</div>
-    );
+export default class BarYCategoryStackChartPlugin extends ChartPlugin {
+  constructor() {
+    super({
+      loadChart: () => import('./BarYCategoryStack'),
+      loadTransformProps: () => import('./transformProps.js'),
+      metadata,
+    });
   }
 }
-
-EchartsBarYCategoryStack.propTypes = propTypes;
-EchartsBarYCategoryStack.defaultProps = defaultProps;
-
-export default EchartsBarYCategoryStack;

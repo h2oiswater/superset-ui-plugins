@@ -16,23 +16,38 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { t } from '@superset-ui/translation';
-import { ChartMetadata, ChartPlugin } from '@superset-ui/chart';
-import thumbnail from './images/thumbnail.png';
+/* eslint-disable react/jsx-sort-default-props, react/sort-prop-types */
+/* eslint-disable react/forbid-prop-types, react/require-default-props */
+import React from "react";
+import PropTypes from "prop-types";
 
-const metadata = new ChartMetadata({
-  description: '',
-  name: t('EchartsBarYCategoryStack'),
-  thumbnail,
-  useLegacyApi: true,
-});
+import "./BarYCategoryStack.css";
 
-export default class EchartsBarYCategoryStackChartPlugin extends ChartPlugin {
-  constructor() {
-    super({
-      loadChart: () => import('./EchartsBarYCategoryStack'),
-      loadTransformProps: () => import('./transformProps.js'),
-      metadata,
-    });
+const propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number
+};
+
+const defaultProps = {
+  width: 400,
+  height: 400
+};
+
+class BarYCategoryStack extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { width, height } = this.props;
+
+    return (
+      <div>zzz</div>
+    );
   }
 }
+
+BarYCategoryStack.propTypes = propTypes;
+BarYCategoryStack.defaultProps = defaultProps;
+
+export default BarYCategoryStack;

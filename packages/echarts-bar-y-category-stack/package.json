@@ -1,5 +1,5 @@
 {
-  "name": "echarts-chart-bar-y-category-stack",
+  "name": "@apenga/echarts-bar-y-category-stack",
   "version": "1.0.0",
   "description": "echarts bar-y-category-stack for superset",
   "main": "index.js",
